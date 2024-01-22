@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:wght@1;100;200;300;400;500;600;700;800;900;1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    font-family:'Times New Roman', Times, serif;
+}
+
+
+
+.container{
+    width: 1300px;
+    max-width: 86%;
+    margin: auto;
+}
+
+span{
+    color: #e75411;
+}
+.logo ul li a {
+    color: rgb(0, 255, 34);
+    font-size: 1.5em;
+}
+li:nth-child(1) a span {
+    color: orange; /* Change to your desired color for JAI */
+    font-size: 2em;
+    
+  
+}
+
+
+li:nth-child(2) a span {
+    color: white; /* Change to your desired color for SHREE */
+    font-size: 2em;
+ 
+}
+
+
+li:nth-child(3) a span {
+    color: green; /* Change to your desired color for RAM */
+    font-size: 2em;
+    
+}
+
+
+.main{
+    width: 100vw;
+    height: 100vh;
+}
+
+/* .page-1{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url(ram-mandir-ayodhya-hd-images-Pics-HD.webp);
+    background-size:cover;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+} */
+
+
+
+.page-1 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url('ram1.jpg');
+    background-size: 100% 100%; /* Adjust this value for your preferred size */
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    align-items: flex-start;
+  }
+  .page-1__body {
+    text-align: right;
+  }
+  .page-1__body container h1 span{
+    color: red;
+  }
+  
+
+.header{
+    width: 100%;
+    height: 100px;
+}
+
+.nav{
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav li {
+    display: inline-block;
+    margin-right: 10px; /* Adjust this value to move the elements to the left or right */
+}
+
+.logo img{
+    position: absolute;
+    width: 30px;
+    filter: blur(0.5px);
+    opacity: 0.5;
+}
+
+.logo h1{
+    color:#010101;
+    cursor: pointer;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    font-weight: 200;
+    z-index: 5;
+}
+
+
+.nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav ul li a{
+    color: #111;
+    font-size: 22px;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    transition: 0.4s ease-in-out;
+}
+
+.nav ul li a:hover{
+    font-size: 25px;
+}
+
+.btn{
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    color: #111;
+    border: 1px solid #111;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    transition: 0.3s ease-in-out;
+}
+
+.btn:hover{
+    scale: 105%;
+}
+
+
+.page-1__body{
+    color: #111;
+}
+
+.page-1__body h2{
+    font-size: 30px;
+    font-weight: 100;
+    letter-spacing: 0.1em;
+    margin-bottom: 5px;
+}
+
+.page-1__body h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 4.5rem;
+    font-weight: 900;
+    letter-spacing: 0.01em;
+    line-height: 4.5vw;
+}
+
+.page-1__body p{
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.social .container{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+.social.container a {
+    text-decoration: none;
+    color: orange; /* Change the color to orange or any other color you prefer */
+}
+
+
+.social{
+    display: flex;
+    justify-content: start;
+    gap: 20px;
+}
+
+.social div{
+    border: 1px solid #111111;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.social i{
+    font-size: 35px;
+    cursor: pointer;
+    color: #0d0c0c;
+}
+
+.fa-instagram{
+    padding: 0 2px;
+}
+
+.social i:hover{
+    animation: social 0.4s forwards;
+    scale: 105%;
+}
+
+@keyframes social{
+    0%{
+        transform: rotate(0deg);
+    }
+    20%{
+        transform: rotate(45deg);
+    }
+    50%{
+        transform: rotate(-45deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+.bubble{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 0;
+    
+}
+.bubble img{
+    width: 40px;
+    height: auto;
+    animation: bubble 5s linear infinite;
+    opacity: 0;
+}
+#text1{
+    position: relative;
+    top: -90px;
+}
+@keyframes bubble{
+    0%{
+        opacity: 0;
+        transform: translateY(0);
+    }
+    30%{
+        opacity: 1;
+    }
+    70%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: translateY(-70vh);
+    }
+}
+
+.bubble img:nth-child(1){
+    animation-delay: 2s;
+}
+.bubble img:nth-child(2){
+    animation-delay: 1s;
+    width: 105px;
+    height: auto;
+}
+.bubble img:nth-child(3){
+    animation-delay: 3s;
+    width: 75px;
+}
+.bubble img:nth-child(4){
+    animation-delay: 4.5s;
+    width: 90px;
+}
+.bubble img:nth-child(5){
+    animation-delay: 3s;
+    width: 55px;
+}
+.bubble img:nth-child(6){
+    animation-delay: 1s;
+}
+.bubble img:nth-child(7){
+    animation-delay: 7s;
+    width: 120px;
+}
+.bubble img:nth-child(8){
+    animation-delay: 3.5s;
+    width: 80px;
+}
+.bubble img:nth-child(9){
+    animation-delay: 1s;
+}
+.bubble img:nth-child(10){
+    animation-delay: 5s;
+}
